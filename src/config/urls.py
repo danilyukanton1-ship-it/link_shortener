@@ -20,6 +20,7 @@ from config import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('api/', include('links.urls')),
 ]
 if settings.DEBUG:
     import debug_toolbar
