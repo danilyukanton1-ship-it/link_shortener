@@ -16,7 +16,7 @@ class CreateLinkView(generics.CreateAPIView):
 class LinkRedirectView(APIView):
 
     def get(self, request, short_code):
-        link = get_object_or_404(Link, short_code=short_code, is_active=True)
+        link = get_object_or_404(Link, short_code=short_code)
         link.clicks += 1
         link.save()
         return redirect(link.original_url)

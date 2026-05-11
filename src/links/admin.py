@@ -9,6 +9,5 @@ class LinkAdmin(admin.ModelAdmin):
         'id',
         'short_code',
         'clicks',
-        'is_active',
     )
 
