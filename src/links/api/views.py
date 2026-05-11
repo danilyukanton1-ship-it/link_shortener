@@ -1,5 +1,4 @@
 from rest_framework import generics
-from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404, redirect
 from links.models import Link

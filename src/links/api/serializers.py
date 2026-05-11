@@ -7,5 +7,5 @@ class LinkSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Link
-        fields = ('id', 'original_url', 'short_code', 'clicks', 'created_at', 'is_active')
+        fields = ('id', 'original_url', 'short_code', 'clicks', 'created_at')
         read_only_fields = ('short_code', 'clicks', 'created_at',)
